@@ -1,119 +1,158 @@
-📗 Table of Contents
-📖 About the Project
-🛠 Built With
-Tech Stack
-Key Features
-🚀 Live Demo
-💻 Getting Started
-Setup
-Prerequisites
-Install
-Usage
-Run tests
-Deployment
-👥 Authors
-🔭 Future Features
-🤝 Contributing
-⭐️ Show your support
-🙏 Acknowledgements
-❓ FAQ (OPTIONAL)
-📝 License
-📖 [your_project_name]
-My portfolio project
+<!-- TABLE OF CONTENTS -->
 
-[your_project__name] is a portfolio project built with HTML and CSS
+# 📗 Table of Contents
 
-🛠 Built With
-Tech Stack
-HTML and CSS
+- [📖 About the Project](#about-project)
+  - [🛠 Built With](#built-with)
+    - [Tech Stack](#tech-stack)
+    - [Key Features](#key-features)
+  - [🚀 Live Demo](#live-demo)
+- [💻 Getting Started](#getting-started)
+  - [Setup](#setup)
+  - [Prerequisites](#prerequisites)
+  - [Install](#install)
+  - [Usage](#usage)
+  - [Run tests](#run-tests)
+  - [Deployment](#triangular_flag_on_post-deployment)
+- [👥 Authors](#authors)
+- [🔭 Future Features](#future-features)
+- [🤝 Contributing](#contributing)
+- [⭐️ Show your support](#support)
+- [🙏 Acknowledgements](#acknowledgements)
+- [❓ FAQ (OPTIONAL)](#faq)
+- [📝 License](#license)
 
-Client
-Server
-Database
-Key Features
+<!-- PROJECT DESCRIPTION -->
 
-[Linters]: This is a cool tool that helps avoid coding error
-[package.json]: Holds all the dependencies of our project
-[stylelintrc]: Helps avoid errors in css file
-[HTML]: is a template used to structure our website
-[CSS]: For styling
+# 📖 [Microverse Porfoilo] <a name="portfolio-project"></a>
 
-🚀 Live Demo
-Add a link to your deployed project.
+> is a portfolio project built with HTML and CSS
 
-💻 Getting Started
-This are the tools ylu need to get started
-* A working internet
-* linters
-* A vs code editor
+**[Microverse Portfoilo project]**
 
-To get a local copy up and running, follow these steps.
+## 🛠 Built With <a name="built-with"></a>
 
-Prerequisites
+### Tech Stack <a name="tech-stack"></a>
+
+<details>
+  <summary>Client</summary>
+  <ul>
+    <li>HTML and CSS</li>
+  </ul>
+</details>
+
+<!-- Features -->
+
+### Key Features <a name="key-features"></a>
+
+- **[HTML file]**
+- **[CSS file]**
+- **[key_feature_3]**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LIVE DEMO -->
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- GETTING STARTED -->
+
+## 💻 Getting Started <a name="getting-started"></a>
+
+To get started with this project do the following steps below
+
+### Prerequisites
+
 In order to run this project you need:
 
-Setup
-Clone this repository to your desired folder:
+In order to run this project you need:
+1. Knowledge HTML and CSS
 
-Install
+2. Have a Vs Code editor
+
+### Setup
+
+Clone this repository to your desired folder
+then copy the HTTP or SSH key
+use this command to clone my repository "git clone"
+
+### Install
+
 Install this project with:
 
-Usage
+- npm install
+
+### Usage
+
 To run the project, execute the following command:
 
-Run tests
+- npm start
+
+### Run tests
+
 To run tests, run the following command:
 
-Deployment
-You can deploy this project using:
+- npm test
 
-(back to top)
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-👥 Authors
-Kingsley Chidozie Igbor
-* Github: @Developer-Kingz
-* LinkedIn: https://www.linkedin.com/in/kingsley-igbor-14b04720b/
-* Twitter: @DaKingzMan
+<!-- AUTHORS -->
 
-GitHub: @githubhandle
-Twitter: @twitterhandle
-LinkedIn: LinkedIn
-(back to top)
+## 👥 Authors <a name="authors"></a>
 
-🔭 Future Features
-Describe 1 - 3 features you will add to the project.
-[About_Me_Section]: A new section for About me will be added
-[Desktop_version]: Also the desktop version will be built in the future
+👤 **Solomon Afutu**
 
-🤝 Contributing
+- GitHub: [@githubhandle](https://github.com/Developer-Kingz)
+- Twitter: [@twitterhandle](https://twitter.com/DaKingzMan)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/kingsley-igbor-14b04720b/)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- FUTURE FEATURES -->
+
+## 🔭 Future Features <a name="future-features"></a>
+
+- [ ] **[New HTML file]**
+- [ ] **[New CSS file]**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- CONTRIBUTING -->
+
+## 🤝 Contributing <a name="contributing"></a>
+
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the issues page.
+Feel free to check the [issues page](../../issues/).
 
-(back to top)
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-⭐️ Show your support
-Write a message to encourage readers to support your project
+<!-- SUPPORT -->
 
-If you like this project, you can always reach out to me, because i look forward to future collaborations
+## ⭐️ Show your support <a name="support"></a>
 
-(back to top)
+If you like this project... I encourage to support me by following me on github and thanks for your support.
 
-🙏 Acknowledgments
-I would like to thank the microverse team, for the awesome lesson and also to my code reviewer i say thank you
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-(back to top)
+<!-- ACKNOWLEDGEMENTS -->
 
-❓ FAQ (OPTIONAL)
-[Question_1]: How to clone
-[Answer_1]: Copy the HTTP or SSH key from github, then run this command in your terminal: Git clone "http-link"
-[Question_2]: How to get the node_modules
-[Answer_2]: after cloning, run this command: "npm install" in your terminal
-(back to top)
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-📝 License
-This project is MIT licensed.
+I would like to thank Microverse for giving me this opportunity to become a software developer. 
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LICENSE -->
+
+## 📝 License <a name="license"></a>
+
+This project is [MIT](MIT.md) licensed.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 https://github.com/Developer-Kingz/my-portforlio-project/blob/add-license-1/LICENSE.MD
-
-(back to top)
