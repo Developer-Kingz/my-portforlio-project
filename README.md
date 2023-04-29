@@ -18,83 +18,102 @@ Deployment
 🙏 Acknowledgements
 ❓ FAQ (OPTIONAL)
 📝 License
-📖 [Hello microverse]
-Describe your project in 1 or 2 sentences.
+📖 [your_project_name]
+My portfolio project
 
-[Portforlio project] is a project that is used to practice mobile first design in software development
+[your_project__name] is a portfolio project built with HTML and CSS
 
 🛠 Built With
-* HTML, CSS
+Tech Stack
+HTML and CSS
 
 Client
 Server
 Database
 Key Features
 
-
 [Linters]: This is a cool tool that helps avoid coding error
 [package.json]: Holds all the dependencies of our project
 [stylelintrc]: Helps avoid errors in css file
 [HTML]: is a template used to structure our website
+[CSS]: For styling
 
 🚀 Live Demo
-
+Add a link to your deployed project.
 
 💻 Getting Started
-
 This are the tools ylu need to get started
 * A working internet
 * linters
 * A vs code editor
 
-
 To get a local copy up and running, follow these steps.
 
 Prerequisites
 In order to run this project you need:
-* A Vs code
-* Understanding Git commands
-* have some knowledge of html and CSS 
-* Basic understanding of linters
-
 
 Setup
-Clone this repository to your desired folder using: 
-git clone https://github.com/Developer-Kingz/Hello-Microverse.git
-move to your desired folder: cd my-folder
-setup linters
-create your html and css files
+Clone this repository to your desired folder:
 
 Install
 Install this project with:
-* install this project with npm install
-* add .hintr and stylelintrc to your package.json
 
 Usage
 To run the project, execute the following command:
-npm install to get the node_modules
+
+Run tests
+To run tests, run the following command:
+
+Deployment
+You can deploy this project using:
+
+(back to top)
 
 👥 Authors
 Kingsley Chidozie Igbor
-
 * Github: @Developer-Kingz
 * LinkedIn: https://www.linkedin.com/in/kingsley-igbor-14b04720b/
 * Twitter: @DaKingzMan
 
+GitHub: @githubhandle
+Twitter: @twitterhandle
+LinkedIn: LinkedIn
+(back to top)
+
 🔭 Future Features
+Describe 1 - 3 features you will add to the project.
+[About_Me_Section]: A new section for About me will be added
+[Desktop_version]: Also the desktop version will be built in the future
 
 🤝 Contributing
 Contributions, issues, and feature requests are welcome!
 
 Feel free to check the issues page.
 
-🙏 Acknowledgments
-I want to thank the microverse team, for the awesome lesson and also to my code reviewer i say thank you
+(back to top)
 
+⭐️ Show your support
+Write a message to encourage readers to support your project
+
+If you like this project, you can always reach out to me, because i look forward to future collaborations
+
+(back to top)
+
+🙏 Acknowledgments
+I would like to thank the microverse team, for the awesome lesson and also to my code reviewer i say thank you
+
+(back to top)
+
+❓ FAQ (OPTIONAL)
+[Question_1]: How to clone
+[Answer_1]: Copy the HTTP or SSH key from github, then run this command in your terminal: Git clone "http-link"
+[Question_2]: How to get the node_modules
+[Answer_2]: after cloning, run this command: "npm install" in your terminal
+(back to top)
 
 📝 License
 This project is MIT licensed.
 
-NOTE: we recommend using the MIT license - you can set it up quickly by using templates available on GitHub. You can also use any other license if you wish.
+https://github.com/Developer-Kingz/my-portforlio-project/blob/add-license-1/LICENSE.MD
 
 (back to top)
