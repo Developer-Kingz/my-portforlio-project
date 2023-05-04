@@ -1,6 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@100;300;600;700&display=swap");
 
 @media only screen and (min-width: 375px) {
+  *{
+    margin: 0;
+    padding: 0;
+  }
+
   .container {
     width: 100%;
     font-family: "Poppins", sans-serif;
@@ -93,6 +98,10 @@
     justify-content: space-between;
   }
 
+  .main-container {
+    display: grid;
+  }
+
   .second-section {
     margin: 114px 24px 114px 24px;
     display: grid;
@@ -116,7 +125,8 @@
   .card-img {
     width: 295px;
     height: 220px;
-    margin: 2vh auto;
+    margin: 3vh auto;
+    line-height: 10vh;
   }
 
   .card-img-div {
@@ -321,6 +331,16 @@
     justify-content: space-between;
     border-bottom: 1px #dfe1e6 solid;
     margin: 0 24px 10px 24px;
+    font-weight: 500;
+    font-size: 20px;
+    color: #000000;
+  }
+
+  .framework {
+    font-weight: 500;
+    font-size: 20px;
+    color: #000;
+    font-family: "Poppins", sans-serif;
   }
 
   .Frame > p,
@@ -337,5 +357,12 @@
     color: #acb7c3;
     align-self: center;
     margin: 0 42px 0 0;
+  }
+
+  .languages {
+    color: #000000;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
   }
 }
