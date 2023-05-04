@@ -336,8 +336,18 @@
     color: #000;
   }
 
-  .framework {
+  .flex-row {
+    border-bottom: 1px solid rgb(231, 227, 227);
+    display: flex;
     font-weight: 500;
+    padding-bottom: 2vh;
+    padding-top: 2vh;
+    font-size: 20px;
+    color: #000;
+  }
+
+  .framework {
+    font-weight: 600;
     font-size: 20px;
     color: #000;
     font-family: "Poppins", sans-serif;
@@ -361,8 +371,11 @@
 
   .languages {
     color: #000;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 20px;
+    padding-left: 3vw;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
     line-height: 24px;
   }
 }
