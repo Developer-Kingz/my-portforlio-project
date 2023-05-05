@@ -309,10 +309,6 @@
     margin-left: 10px;
   }
 
-  .lang {
-    justify-content: space-between;
-  }
-
   .lang h2 {
     font-family: "Poppins", sans-serif;
     font-weight: 500;
@@ -355,11 +351,13 @@
 
   .lang {
     display: flex;
+    justify-content: space-between;
   }
 
   .down-btn {
     margin-right: 8vw;
   }
+
   .Frame > p,
   .skill > p {
     font-family: "Poppins", sans-serif;
