@@ -353,6 +353,13 @@
     font-family: "Poppins", sans-serif;
   }
 
+  .lang {
+    display: flex;
+  }
+
+  .down-btn {
+    margin-right: 8vw;
+  }
   .Frame > p,
   .skill > p {
     font-family: "Poppins", sans-serif;
