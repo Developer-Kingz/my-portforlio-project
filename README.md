@@ -145,7 +145,6 @@ I would like to thank Microverse for giving me this opportunity to become a soft
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LICENSE -->
 
@@ -154,5 +153,3 @@ I would like to thank Microverse for giving me this opportunity to become a soft
 This project is [MIT](MIT.md) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-https://github.com/Developer-Kingz/my-portforlio-project/blob/add-license-1/LICENSE.MD

@@ -1,6 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@100;300;600;700&display=swap");
 
 @media only screen and (min-width: 375px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
   .container {
     width: 100%;
     font-family: "Poppins", sans-serif;
@@ -93,6 +98,10 @@
     justify-content: space-between;
   }
 
+  .main-container {
+    display: grid;
+  }
+
   .second-section {
     margin: 114px 24px 114px 24px;
     display: grid;
@@ -116,7 +125,8 @@
   .card-img {
     width: 295px;
     height: 220px;
-    margin: 2vh auto;
+    margin: 3vh auto;
+    line-height: 10vh;
   }
 
   .card-img-div {
@@ -299,10 +309,6 @@
     margin-left: 10px;
   }
 
-  .lang {
-    justify-content: space-between;
-  }
-
   .lang h2 {
     font-family: "Poppins", sans-serif;
     font-weight: 500;
@@ -321,6 +327,35 @@
     justify-content: space-between;
     border-bottom: 1px #dfe1e6 solid;
     margin: 0 24px 10px 24px;
+    font-weight: 500;
+    font-size: 20px;
+    color: #000;
+  }
+
+  .flex-row {
+    border-bottom: 1px solid rgb(231, 227, 227);
+    display: flex;
+    font-weight: 500;
+    padding-bottom: 2vh;
+    padding-top: 2vh;
+    font-size: 20px;
+    color: #000;
+  }
+
+  .framework {
+    font-weight: 600;
+    font-size: 20px;
+    color: #000;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .lang {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .down-btn {
+    margin-right: 8vw;
   }
 
   .Frame > p,
@@ -337,5 +372,15 @@
     color: #acb7c3;
     align-self: center;
     margin: 0 42px 0 0;
+  }
+
+  .languages {
+    color: #000;
+    font-weight: 600;
+    font-size: 20px;
+    padding-left: 3vw;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+    line-height: 24px;
   }
 }
