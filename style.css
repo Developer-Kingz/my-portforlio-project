@@ -617,7 +617,7 @@ ul {
   }
 
   .canopy-div {
-    width: 70%;
+    width: 50%;
     display: flex;
     justify-content: space-between;
   }
@@ -665,6 +665,7 @@ ul {
 
   .logo {
     width: 20%;
+    margin-left: 6vw;
   }
 
   .menu {
@@ -672,7 +673,7 @@ ul {
   }
 
   .desktop-menu {
-    width: 35%;
+    width: 30%;
     margin-left: 60vw;
     margin-top: 1vh;
   }
@@ -687,26 +688,35 @@ ul {
   }
 
   .stack-div {
-    width: 80%;
+    width: 40%;
     height: 25%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-
-    /* border: 1px solid black; */
   }
 
   .stack-java {
     width: 30%;
     height: 90%;
+    font-size: 15px;
     border-radius: 8px;
     background-color: #f7f7f9;
 
     /* border: 1px solid black; */
   }
 
+  .stack-java > img {
+    width: 3vw;
+    margin-top: 1vh;
+    margin-left: 1vw;
+  }
+
+  .stack-java > p {
+    margin-left: 0.5vw;
+  }
+
   .desktop-about-left {
-    width: 45%;
+    width: 35%;
     height: 70%;
     margin-left: 4vw;
 
@@ -721,10 +731,15 @@ ul {
   }
 
   .desktop-about-right {
-    width: 45%;
+    width: 50%;
     height: 70%;
+    margin-left: 2vw;
+  }
 
-    /* border: 1px solid black; */
+  .desktop-about-right > h2 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 2vh;
   }
 
   .abouth1 {
@@ -734,15 +749,31 @@ ul {
     margin-bottom: 4vh;
   }
 
-  .desktop-about-right > p {
-    font-size: 2vw;
-    font-weight: 400;
-    line-height: 24px;
+  .desk-lang {
+    display: flex;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 3vh;
+    justify-content: space-between;
   }
 
-  .desktop-about-right > h2 {
-    margin-bottom: 3vh;
+  /* .desktop-about-right > p {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 4vh;
+    margin-top: 3vh;
+    line-height: 24px;
     color: #344563;
+  } */
+  .desktop-frame {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 1.5vh;
+    margin-top: 3vh;
+    line-height: 24px;
+    color: #344563;
+    display: flex;
+    justify-content: space-between;
   }
 
   .desktop-icon-div {
@@ -821,15 +852,17 @@ ul {
   }
 
   .contact-form-div {
-    width: 50%;
+    width: 40%;
     height: 60vh;
-
-    /* margin: auto; */
     margin: 15vh auto;
   }
 
+  .contact-form-div > button {
+    margin-left: 15vw;
+  }
+
   .text-area {
-    width: 50vw;
+    width: 40vw;
     border-radius: 8px;
     padding-left: 2vw;
     padding-top: 2vh;
