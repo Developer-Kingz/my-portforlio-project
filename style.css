@@ -160,6 +160,7 @@ h3 {
 
 .main-container {
   display: grid;
+  position: relative;
 }
 
 .second-section {
@@ -172,7 +173,181 @@ h3 {
   border-radius: 16px;
   height: 552px;
 
+  /* position: relative; */
+
   /* border: 1px solid black; */
+}
+
+.modal-backdrop {
+  width: 100vw;
+  height: 150vh;
+  background-color: #657b90;
+  opacity: 0.3;
+
+  /* background-color: red;
+  border: 1px solid black; */
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+
+  /* right: 1vw; */
+}
+
+.modal-backdrop2 {
+  width: 100vw;
+  height: 150vh;
+  background-color: #657b90;
+  opacity: 0.3;
+
+  /* background-color: red;
+  border: 1px solid black; */
+  position: absolute;
+  top: 120vh;
+  left: 0;
+  display: none;
+
+  /* right: 1vw; */
+}
+
+.modal-backdrop-show {
+  display: block;
+}
+
+.item h2 {
+  margin-bottom: 2vh;
+  margin-top: 3vh;
+}
+
+.Myself > h2 {
+  padding-top: 114px;
+  margin: 0 24px 0 24px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  color: #172b4d;
+}
+
+.lang h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  margin: 60px 36px 36px 36px;
+  color: #000;
+}
+
+#modal-show > h2 {
+  margin-left: 5vw;
+}
+
+.modal-inner {
+  width: 90%;
+  height: 117vh;
+  padding-left: 5vw;
+  background-color: white;
+  position: absolute;
+  top: 15vh;
+  border-radius: 16px;
+  left: 5vw;
+  z-index: 2;
+  display: none;
+}
+
+.item p {
+  margin-bottom: 2vh;
+}
+
+.item button {
+  color: #6070ff;
+  background-color: #ebebff;
+  border: none;
+  padding: 0.5vh 2vw;
+  border-radius: 5px;
+}
+
+.modal-inner2 {
+  width: 90%;
+  height: 117vh;
+  padding-left: 5vw;
+  background-color: white;
+  position: absolute;
+  top: 135vh;
+  border-radius: 16px;
+  left: 5vw;
+  z-index: 2;
+  display: none;
+}
+
+.modal-backdrop3 {
+  width: 100vw;
+  height: 150vh;
+  background-color: #657b90;
+  opacity: 0.3;
+
+  /* background-color: red;
+border: 1px solid black; */
+  position: absolute;
+  top: 240vh;
+  left: 0;
+  display: none;
+
+  /* right: 1vw; */
+}
+
+.modal-inner3 {
+  width: 90%;
+  height: 117vh;
+  padding-left: 5vw;
+  background-color: white;
+  position: absolute;
+  top: 250vh;
+  border-radius: 16px;
+  left: 5vw;
+  z-index: 2;
+  display: none;
+}
+
+.modal-show {
+  display: block;
+}
+
+#modal-close {
+  position: absolute;
+  right: 4vw;
+  top: 2vh;
+}
+
+#modal-close2 {
+  position: absolute;
+  right: 4vw;
+  top: 2vh;
+}
+
+#modal-close3 {
+  position: absolute;
+  right: 4vw;
+  top: 2vh;
+}
+
+.modal-inner > h1 {
+  margin-top: 5vh;
+  margin-left: 3vw;
+  font-size: 32px;
+}
+
+.modal-inner > ul {
+  margin-left: 3vw;
+}
+
+.modal-inner > img {
+  margin-left: 3vw;
+  margin-top: 1vh;
+}
+
+.modal-inner > p {
+  margin-left: 3vw;
+  margin-top: 1vh;
+  width: 85%;
 }
 
 .Card1 {
@@ -302,15 +477,6 @@ h3 {
   margin-top: 3vh;
 }
 
-.Myself > h2 {
-  padding-top: 114px;
-  margin: 0 24px 0 24px;
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  font-size: 40px;
-  color: #172b4d;
-}
-
 .Myself > p {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
@@ -383,14 +549,6 @@ h3 {
 .L2,
 .L3 {
   margin-left: 10px;
-}
-
-.lang h2 {
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-size: 20px;
-  margin: 60px 36px 36px 36px;
-  color: #000;
 }
 
 .lang i {
@@ -638,6 +796,8 @@ h3 {
     height: auto;
     margin: auto;
     display: flex;
+
+    /* border: 1px solid black; */
     background-color: white;
     align-items: center;
     border-radius: 10px;
@@ -938,5 +1098,153 @@ h3 {
     padding-left: 2vw;
     padding-top: 2vh;
     border: none;
+  }
+
+  .desk-backdrop1 {
+    width: 100vw;
+    height: 800%;
+    background-color: #657b90;
+    opacity: 0.3;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+  }
+
+  .desk-backdrop2 {
+    width: 100vw;
+    height: 700%;
+    background-color: #657b90;
+    opacity: 0.3;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+  }
+
+  .desk-backdrop3 {
+    width: 100vw;
+    height: 700%;
+    background-color: #657b90;
+    opacity: 0.3;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+  }
+
+  .desk-backdrop4 {
+    width: 100vw;
+    height: 700%;
+    background-color: #657b90;
+    opacity: 0.3;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+  }
+
+  .modal-backdrop-show {
+    display: block;
+  }
+
+  .modal-inner-desk1 {
+    width: 70%;
+    height: 160%;
+    padding-left: 5vw;
+    background-color: white;
+    position: absolute;
+    top: 100vh;
+    border-radius: 16px;
+    left: 15vw;
+    z-index: 2;
+    display: none;
+  }
+
+  .modal-inner-desk2 {
+    width: 70%;
+    height: 160%;
+    padding-left: 5vw;
+    background-color: white;
+    position: absolute;
+    top: 100vh;
+    border-radius: 16px;
+    left: 15vw;
+    z-index: 2;
+    display: none;
+  }
+
+  .modal-inner-desk3 {
+    width: 70%;
+    height: 160%;
+    padding-left: 5vw;
+    background-color: white;
+    position: absolute;
+    top: 100vh;
+    border-radius: 16px;
+    left: 15vw;
+    z-index: 2;
+    display: none;
+  }
+
+  .modal-inner-desk4 {
+    width: 70%;
+    height: 160%;
+    padding-left: 5vw;
+    background-color: white;
+    position: absolute;
+    top: 100vh;
+    border-radius: 16px;
+    left: 15vw;
+    z-index: 2;
+    display: none;
+  }
+
+  .new-modal-show {
+    display: block;
+  }
+
+  .desk-style img {
+    width: 80%;
+    margin-left: 3vw;
+
+    /* height: 50%; */
+  }
+
+  .desk-style span {
+    width: 25vw;
+    display: flex;
+  }
+
+  .desk-style button {
+    padding: 5px;
+    border-radius: 10px;
+    color: #396df2;
+    border: 1px solid #396df2;
+    background-color: #ebebff;
+  }
+
+  .desk-style span button {
+    margin-left: 3vw;
+    padding: 1vh 3vw;
+  }
+
+  .desk-style div {
+    border: 1px solid black;
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5vh;
+    margin-left: 3vw;
+  }
+
+  .desk-style h2 {
+    margin-top: 5vh;
+    margin-left: 3vw;
+  }
+
+  .desk-style p {
+    margin-left: 3vw;
+    width: 70%;
   }
 }

@@ -74,6 +74,7 @@
             </div>
         </section>
 
+         <!-- begining of desktop version -->
         <section class="desktop-container">
            <div class="mobile-version">
             <div class="mobile-image">
@@ -93,9 +94,17 @@
              <button class="desktop-btn">CSS</button>
              <button class="desktop-btn">JavaScript</button>
 
-             <p><button class="see-project">See Project</button></p>
+             <p><button class="see-project" onclick="openDesk1()">See Project</button></p>
             </div>
            </div>
+
+           <!-- modal popup -->
+           <div class="desk-backdrop1" id="back-drop-desk"></div>
+           <div class="modal-inner-desk1" id="modal-show-desk">
+             <h1 id="modal-title"></h1>
+             <i class="fa fa-times" aria-hidden="true" id="modal-close" onclick="closeDesk1()"></i>
+           </div>
+           <!-- end of modal popup -->
 
            <div class="mobile-version">
             <div class="mobile-section-div-left">
@@ -113,12 +122,20 @@
              <button class="desktop-btn">HTML</button>
              <button class="desktop-btn">CSS</button>
              <button class="desktop-btn">JavaScript</button>
-             <p><a href="https://github.com/Developer-Kingz/my-portforlio-project/pull/5"><button class="see-project">See Project</button></a></p>
+             <p><button class="see-project" onclick="openDesk2()">See Project</button></p>
             </div>
             <div class="mobile-image">
               <img src="desktop3.svg" alt="" class="card-img-img">
             </div>
            </div>
+
+           <!-- modal popup -->
+           <div class="desk-backdrop2" id="back-drop-desk2"></div>
+           <div class="modal-inner-desk2" id="modal-show-desk2">
+             <h1 id="modal-title"></h1>
+             <i class="fa fa-times" aria-hidden="true" id="modal-close" onclick="closeDesk2()"></i>
+           </div>
+           <!-- end of modal popup -->
 
            <div class="mobile-version">
             <div class="mobile-image">
@@ -139,9 +156,18 @@
              <button class="desktop-btn">CSS</button>
              <button class="desktop-btn">JavaScript</button>
 
-             <p><a href="https://github.com/Developer-Kingz/my-portforlio-project/pull/5"><button class="see-project">See Project</button></a></p>
+             <p><button class="see-project" onclick="openDesk3()">See Project</button></p>
             </div>
            </div>
+
+           <!-- modal popup -->
+           <div class="desk-backdrop3" id="back-drop-desk3"></div>
+           <div class="modal-inner-desk3" id="modal-show-desk3">
+             <h1 id="modal-title"></h1>
+             <i class="fa fa-times" aria-hidden="true" id="modal-close" onclick="closeDesk3()"></i>
+           </div>
+           <!-- end of modal popup -->
+
 
            <div class="mobile-version">
             <div class="mobile-section-div-left">
@@ -157,13 +183,22 @@
              <button class="desktop-btn">HTML</button>
              <button class="desktop-btn">CSS</button>
              <button class="desktop-btn">JavaScript</button>
-             <p><a href="https://github.com/Developer-Kingz/my-portforlio-project/pull/5"><button class="see-project">See Project</button></a></p>
+             <p onclick="openDesk4()"><button class="see-project">See Project</button></p>
             </div>
             <div class="mobile-image-right">
               <img src="desktop2.svg" alt="" class="card-img-img">
             </div>
            </div>
+
+           <!-- modal popup -->
+           <div class="desk-backdrop4" id="back-drop-desk4"></div>
+           <div class="modal-inner-desk4" id="modal-show-desk4">
+             <h1 id="modal-title"></h1>
+             <i class="fa fa-times" aria-hidden="true" id="modal-close" onclick="closeDesk4()"></i>
+           </div>
+           <!-- end of modal popup -->
         </section>
+        <!-- end of desktop version -->
 
         <section class="desktop-second-about">
           <div class="desktop-about-left">
@@ -240,7 +275,15 @@
                                 <li>CSS</li>
                                 <li>JavaScript</li>
                               </ul>
-                              <p><a href="https://github.com/Developer-Kingz/my-portforlio-project/pull/5"><button class="see-btn">See Project</button></a></p>
+                              <p><button class="see-btn" onclick="openModal1()">See Project</button></p>
+                              
+                              <!-- modal popup -->
+                              <div class="modal-backdrop" id="back-drop"></div>
+                              <div class="modal-inner" id="modal-show">
+                                <h1 id="modal-title"></h1>
+                                <i class="fa fa-times" aria-hidden="true" id="modal-close" onclick="closeModal1()"></i>
+                              </div>
+                              <!-- end of modal popup -->
                         </div>
                     </div>
 
@@ -269,7 +312,33 @@
                                 <li>CSS</li>
                                 <li>JavaScript</li>
                               </ul>
-                              <button type="button" class="see-btn">See projects</button>
+                              <button type="button" class="see-btn" onclick="openModal2()">See projects</button>
+
+                              <!-- modal popup -->
+                              <div class="modal-backdrop2" id="back-drop2"></div>
+                              <div class="modal-inner2" id="modal-show2">
+                                <h1 id="modal-title2"></h1>
+                                <i class="fa fa-times" aria-hidden="true" id="modal-close2" onclick="closeModal2()"></i>
+                                <!-- <button  class="modal-close" onclick="closeModal()">close</button> -->
+                                <!-- <ul class="Card1-tech">
+                                  <li class="P1" class="canopy">Canopy</li>
+                                  <img src="Counter.svg" alt="" />
+                                  <li class="P2" class="back-dev">Back End Dev</li>
+                                  <img src="Counter.svg" alt="" />
+                                  <li class="P3" class="back-dev">2015</li>
+                              </ul> -->
+                              <!-- <img src="Snapshoot Portfolio.svg" alt="">
+                              <p id="modal-description2"></p>
+                              <ul class="T1">
+                                <li class="html">HTML</li>
+                                <li class="css">CSS</li>
+                                <li class="javascript">JavaScript</li>
+                              </ul>
+                              <button class="see-btn">See Live</button>
+                              <button class="see-btn">See Source</button> -->
+                              </div>
+                              <!-- end of modal popup -->
+
                         </div>
                     </div>
                 </div>
@@ -296,7 +365,32 @@
                                 <li>CSS</li>
                                 <li>JavaScript</li>
                               </ul>
-                              <button type="button" class="see-btn">See projects</button>
+                              <button type="button" class="see-btn" onclick="openModal3()">See projects</button>
+
+                              <!-- modal popup -->
+                              <div class="modal-backdrop3" id="back-drop3"></div>
+                              <div class="modal-inner3" id="modal-show3">
+                                <h1 id="modal-title"></h1>
+                                <i class="fa fa-times" aria-hidden="true" id="modal-close2" onclick="closeModal3()"></i>
+                                <!-- <button  class="modal-close" onclick="closeModal()">close</button> -->
+                                <!-- <ul class="Card1-tech">
+                                  <li class="P1" class="canopy">Canopy</li>
+                                  <img src="Counter.svg" alt="" />
+                                  <li class="P2" class="back-dev">Back End Dev</li>
+                                  <img src="Counter.svg" alt="" />
+                                  <li class="P3" class="back-dev">2015</li>
+                              </ul> -->
+                              <!-- <img src="Snapshoot Portfolio.svg" alt="">
+                              <p id="modal-description"></p>
+                              <ul class="T1">
+                                <li class="html">HTML</li>
+                                <li class="css">CSS</li>
+                                <li class="javascript">JavaScript</li>
+                              </ul>
+                              <button class="see-btn">See Live</button>
+                              <button class="see-btn">See Source</button> -->
+                              </div>
+                              <!-- end of modal popup -->
                         </div>
                     </div>
                 </div>
