@@ -1229,13 +1229,13 @@ border: 1px solid black; */
     display: flex;
   }
 
-  .desk-style button {
+  /* .desk-style button {
     padding: 5px;
     border-radius: 10px;
     color: #396df2;
     border: 1px solid #396df2;
     background-color: #ebebff;
-  }
+  } */
 
   /* .desk-style span button {
     margin-left: 3vw;
