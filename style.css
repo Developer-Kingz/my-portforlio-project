@@ -683,12 +683,34 @@ border: 1px solid black; */
   /* margin-bottom: 2vh; */
 }
 
+.desk-style button {
+  padding: 5px;
+  border-radius: 10px;
+  color: #396df2;
+  border: 1px solid #396df2;
+  background-color: #ebebff;
+}
+
 .contact-form-div {
   width: 85%;
   height: 60vh;
 
   /* margin: auto; */
   margin: 15vh auto;
+}
+
+.contact-form-div button {
+  color: #6070ff;
+  padding: 12px 16px;
+  border: none;
+  background-color: white;
+  border-radius: 8px;
+  margin-top: 2vh;
+}
+
+.desk-style span button {
+  margin-left: 3vw;
+  padding: 1vh 3vw;
 }
 
 .contact-input {
@@ -704,15 +726,6 @@ border: 1px solid black; */
   border-radius: 8px;
   padding-top: 2vh;
   padding-left: 2vw;
-}
-
-.contact-form-div button {
-  color: #6070ff;
-  padding: 12px 16px;
-  border: none;
-  background-color: white;
-  border-radius: 8px;
-  margin-top: 2vh;
 }
 
 .text-area {
@@ -1216,18 +1229,18 @@ border: 1px solid black; */
     display: flex;
   }
 
-  /* .desk-style button {
+  .desk-style button {
     padding: 5px;
     border-radius: 10px;
     color: #396df2;
     border: 1px solid #396df2;
     background-color: #ebebff;
-  } */
+  }
 
-  .desk-style span button {
+  /* .desk-style span button {
     margin-left: 3vw;
     padding: 1vh 3vw;
-  }
+  } */
 
   .desk-style div {
     width: 30%;
