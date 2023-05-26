@@ -1,19 +1,5 @@
 const popup = document.getElementById('mobile-toggle');
 const menubutton = document.getElementById('menu-hide');
-const modal = document.getElementById('back-drop');
-const modalshow = document.getElementById('modal-show');
-const modal2 = document.getElementById('back-drop2');
-const modalshow2 = document.getElementById('modal-show2');
-const modal3 = document.getElementById('back-drop3');
-const modalshow3 = document.getElementById('modal-show3');
-const modalDesk1 = document.getElementById('back-drop-desk');
-const deskShow1 = document.getElementById('modal-show-desk');
-const modalDesk2 = document.getElementById('back-drop-desk2');
-const deskShow2 = document.getElementById('modal-show-desk2');
-const modalDesk3 = document.getElementById('back-drop-desk3');
-const deskShow3 = document.getElementById('modal-show-desk3');
-const modalDesk4 = document.getElementById('back-drop-desk4');
-const deskShow4 = document.getElementById('modal-show-desk4');
 
 function openMenu() {
   popup.classList.add('mobile-toggle-show');
@@ -39,6 +25,7 @@ const data = [
             'Experimental content creation feature that allows users to add to an existing stay over the course of a day without spamming their friends Experimental content creation feature that allows users to add to an existing stay over the course of a day without spamming their friends Experimental content creation feature that allows users to add to an existing stay over the course of a day without spamming their friends',
     mobileImg: 'Snapshoot Portfolio.svg',
     desktopImg: 'desktop4.svg',
+    circle: 'Counter.svg',
     live: 'See Live',
     source: 'See Source',
     skills: {
@@ -58,8 +45,9 @@ const data = [
             'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     deskDescription:
             'Experimental content creation feature that allows users to add to an existing stay over the course of a day without spamming their friends Experimental content creation feature that allows users to add to an existing stay over the course of a day without spamming their friends Experimental content creation feature that allows users to add to an existing stay over the course of a day without spamming their friends',
-    mobileImg: 'Snapshoot Portfolio (1).svg',
+    mobileImg: 'Snapshoot Portfolio (4).svg',
     desktopImg: 'desktop3.svg',
+    circle: 'Counter.svg',
     live: 'See Live',
     source: 'See Source',
     skills: {
@@ -81,6 +69,7 @@ const data = [
             'Experimental content creation feature that allows users to add to an existing stay over the course of a day without spamming their friends Experimental content creation feature that allows users to add to an existing stay over the course of a day without spamming their friends Experimental content creation feature that allows users to add to an existing stay over the course of a day without spamming their friends',
     mobileImg: 'Snapshoot Portfolio (3).svg',
     desktopImg: 'desktopimg.svg',
+    circle: 'Counter.svg',
     live: 'See Live',
     source: 'See Source',
     skills: {
@@ -101,6 +90,7 @@ const data = [
             'Experimental content creation feature that allows users to add to an existing stay over the course of a day without spamming their friends Experimental content creation feature that allows users to add to an existing stay over the course of a day without spamming their friends Experimental content creation feature that allows users to add to an existing stay over the course of a day without spamming their friends',
     mobileImg: 'Snapshoot Portfolio (3).svg',
     desktopImg: 'desktop2.svg',
+    circle: 'Counter.svg',
     live: 'See Live',
     source: 'See Source',
     skills: {
@@ -111,151 +101,206 @@ const data = [
   },
 ];
 
-const container = document.getElementById('modal-show');
-const container2 = document.getElementById('modal-show2');
-const container3 = document.getElementById('modal-show3');
+data.forEach((item) => {
+  const section = document.createElement('div');
+  const forMobile = document.createElement('div');
 
-const deskCont = document.getElementById('modal-show-desk');
-const deskCont2 = document.getElementById('modal-show-desk2');
-const deskCont3 = document.getElementById('modal-show-desk3');
-const deskCont4 = document.getElementById('modal-show-desk4');
+  forMobile.innerHTML = `
+    <div class="second-section">
+    
+    <div class="card1">
+                    <div class="card-img">
+                        <img src="${item.mobileImg}" alt="" class="card-img-img"> 
+                        <div class="card-img-div">
+                            <h1 class="tonic">${item.name}</h1>
+                            <ul class="Card1-tech">
+                                <li class="P1" class="canopy">${item.title}</li>
+                                <img src="${item.circle}" alt="" />
+                                <li class="P2" class="back-dev">${item.stack}</li>
+                                <img src="${item.circle}" alt="" />
+                                <li class="P3" class="back-dev">${item.year}</li>
+                            </ul>
+                            <p>
+                                ${item.description}
+                              </p>
+                              <ul class="T1">
+                                <li>${item.skills.skill1}</li>
+                                <li>${item.skills.skill2}</li>
+                                <li>${item.skills.skill3}</li>
+                              </ul>
+                              <button class="see-mobile">See Project</button>
+                        </div>
+                    </div>
 
-for (let i = 0; i < data.length; i += 1) {
-  const item = data[i];
-  const itemDiv = document.createElement('div');
-  const deskDiv = document.createElement('div');
-
-  itemDiv.className = 'item';
-  deskDiv.className = 'desk-style';
-
-  deskDiv.innerHTML = `
-    <h2>${item.name}</h2>
-    <span>
-    <h3>${item.title}</h3>
-    <p>${item.stack}</p>
-    <p>${item.year}</p>
-    </span>
-    <img src="${item.desktopImg}" alt="Mobile Image">
-    <p>${item.deskDescription}</p>
-    <div>
-    <button>${item.skills.skill1}<button>
-    <button>${item.skills.skill2}<button>
-    <button>${item.skills.skill3}<button>
-    </div>
-    <span>
-    <button><a href="${item.live}">See Live</a><button>
-    <button><a href="${item.source}">See Source</a><button>
-    </span>
-    <hr>
+                </div>
+  </div>
     `;
+  const mobileSectionCont = document.querySelector('.main-container');
+  mobileSectionCont.appendChild(forMobile);
+  const mobilePop = document.querySelectorAll('.see-mobile');
 
-  itemDiv.innerHTML = `
-                <h2>${item.name}</h2>
-                <h3>${item.title}</h3>
-                <p>${item.stack}</p>
-                <p>${item.year}</p>
-                <img src="${item.mobileImg}" alt="Mobile Image">
-                <p>${item.description}</p>
-                <button>${item.skills.skill1}<button>
-                <button>${item.skills.skill2}<button>
-                <button>${item.skills.skill3}<button>
-                <button><a href="${item.live}">See Live</a><button>
-                <button><a href="${item.source}">See Source</a><button>
-                
+  mobilePop.forEach((pop) => {
+    pop.addEventListener('click', (e) => {
+      let { id } = e.target;
+      id = Number(id);
+      if (id === item.id) {
+        const itemMobileDiv = document.createElement('div');
+        itemMobileDiv.className = 'new-items';
+        itemMobileDiv.innerHTML = `
+          <h1>${item.name}</h1>
+          <div class="canopy-div-pop">
+            <p>${item.title}</p>
+            <img src="${item.circle}" alt="" />
+            <p>${item.stack}</p>
+            <img src="${item.circle}" alt="" />
+            <p>${item.year}</p>
+          </div>
+          <img src="${item.mobileImg}" class="pop-desk-img" alt="Mobile Image">
+          <div class="description-cont">
+          <div class="description-p">
+            <p class="writeup-div">${item.description}</p>
+          </div>
+            <div class="description-btn-cont">
+             <button class="desktop-btn">${item.skills.skill1}</button>
+             <button class="desktop-btn">${item.skills.skill2}</button>
+             <button class="desktop-btn">${item.skills.skill3}</button>
+             <hr>
+             <div class="description-see">
+               <button class="see-project">See Live</button>
+               <button class="see-project">See Source</button>
+             </div>
+            </div>
+          </div>
+
             `;
 
-  switch (item.id) {
-    case 1:
-      container.appendChild(itemDiv);
-      deskCont.appendChild(deskDiv);
-      break;
-    case 2:
-      container2.appendChild(itemDiv);
-      deskCont2.appendChild(deskDiv);
-      break;
-    case 3:
-      container3.appendChild(itemDiv);
-      deskCont3.appendChild(deskDiv);
-      break;
-    case 4:
-      deskCont4.appendChild(deskDiv);
-      break;
-    default:
-      break;
-  }
-}
+        const backOverlay = document.querySelector('.mobile-backdrop1');
+        backOverlay.classList.add('modal-backdrop-show');
 
-// const titleElement2 = document.getElementById('modal-title2');
-// titleElement2.textContent = object2.name;
+        const modalContainer = document.querySelector('.modal-inner');
 
-function openModal1() {
-  modal.classList.add('modal-backdrop-show');
-  modalshow.classList.add('modal-show');
-}
-openModal1();
-function closeModal1() {
-  modal.classList.remove('modal-backdrop-show');
-  modalshow.classList.remove('modal-show');
-}
-closeModal1();
-function openModal2() {
-  modal2.classList.add('modal-backdrop-show');
-  modalshow2.classList.add('modal-show');
-}
-openModal2();
-function closeModal2() {
-  modal2.classList.remove('modal-backdrop-show');
-  modalshow2.classList.remove('modal-show');
-}
-closeModal2();
-function openModal3() {
-  modal3.classList.add('modal-backdrop-show');
-  modalshow3.classList.add('modal-show');
-}
-openModal3();
-function closeModal3() {
-  modal3.classList.remove('modal-backdrop-show');
-  modalshow3.classList.remove('modal-show');
-}
-closeModal3();
+        modalContainer.appendChild(itemMobileDiv);
+        modalContainer.classList.add('modal-inner-show');
+        // const cancelButton = document.querySelector("#modal-close");
 
-function openDesk1() {
-  modalDesk1.classList.add('modal-backdrop-show');
-  deskShow1.classList.add('new-modal-show');
-}
-openDesk1();
-function closeDesk1() {
-  modalDesk1.classList.remove('modal-backdrop-show');
-  deskShow1.classList.remove('new-modal-show');
-}
-closeDesk1();
-function openDesk2() {
-  modalDesk2.classList.add('modal-backdrop-show');
-  deskShow2.classList.add('new-modal-show');
-}
-openDesk2();
-function closeDesk2() {
-  modalDesk2.classList.remove('modal-backdrop-show');
-  deskShow2.classList.remove('new-modal-show');
-}
-closeDesk2();
-function openDesk3() {
-  modalDesk3.classList.add('modal-backdrop-show');
-  deskShow3.classList.add('new-modal-show');
-}
-openDesk3();
-function closeDesk3() {
-  modalDesk3.classList.remove('modal-backdrop-show');
-  deskShow3.classList.remove('new-modal-show');
-}
-closeDesk3();
-function openDesk4() {
-  modalDesk4.classList.add('modal-backdrop-show');
-  deskShow4.classList.add('new-modal-show');
-}
-openDesk4();
-function closeDesk4() {
-  modalDesk4.classList.remove('modal-backdrop-show');
-  deskShow4.classList.remove('new-modal-show');
-}
-closeDesk4();
+        // cancelButton.addEventListener("click", (e) => {
+        //     e.preventDefault();
+        //     itemMobileDiv.innerHTML = "";
+        //     modalContain.classList.remove("new-modal-show");
+        //     backOverlay.classList.remove("modal-backdrop-show");
+        // });
+      }
+    });
+  });
+
+  // DESKTOP
+  section.innerHTML = `
+         <div class="mobile-version">
+         <div class="mobile-image">
+          <img src="${item.desktopImg}" alt="" class="card-img-img">
+         </div>
+        <div class="mobile-section-div">
+          <h1>${item.name}</h1>
+          <div class="canopy-div">
+            <p>${item.title}</p>
+            <img src="${item.circle}" alt="" />
+            <p>${item.stack}</p>
+            <img src="${item.circle}" alt="" />
+            <p>2015</p>
+          </div>
+         <p class="writeup-div">${item.deskDescription}</p>
+         <button class="desktop-btn">${item.skills.skill1}</button>
+         <button class="desktop-btn">${item.skills.skill2}</button>
+         <button class="desktop-btn">${item.skills.skill3}</button>
+
+         <p><button id="${item.id}" class="see-project">See Project</button></p>
+        </div>
+       </div>
+        `;
+
+  const sectionContainer = document.querySelector('.desktop-container');
+  sectionContainer.appendChild(section);
+
+  const popUps = document.querySelectorAll('.see-project');
+
+  popUps.forEach((pop) => {
+    pop.addEventListener('click', (e) => {
+      let { id } = e.target;
+      id = Number(id);
+      if (id === item.id) {
+        const itemDiv = document.createElement('div');
+        itemDiv.className = 'new-items';
+        itemDiv.innerHTML = `
+          <h1>${item.name}</h1>
+          <div class="canopy-div-pop">
+            <p>${item.title}</p>
+            <img src="${item.circle}" alt="" />
+            <p>${item.stack}</p>
+            <img src="${item.circle}" alt="" />
+            <p>2015</p>
+          </div>
+          <img src="${item.desktopImg}" class="pop-desk-img" alt="Mobile Image">
+          <div class="description-cont">
+          <div class="description-p">
+            <p class="writeup-div">${item.deskDescription}</p>
+          </div>
+            <div class="description-btn-cont">
+             <button class="desktop-btn">${item.skills.skill1}</button>
+             <button class="desktop-btn">${item.skills.skill2}</button>
+             <button class="desktop-btn">${item.skills.skill3}</button>
+             <hr>
+             <div class="description-see">
+               <button class="see-project">See Live</button>
+               <button class="see-project">See Source</button>
+             </div>
+            </div>
+          </div>
+
+            `;
+
+        const backOverlay = document.querySelector('.desk-backdrop1');
+        backOverlay.classList.add('modal-backdrop-show');
+
+        const modalContain = document.querySelector('.modal-inner-desk1');
+
+        modalContain.appendChild(itemDiv);
+        modalContain.classList.add('new-modal-show');
+        const cancelButton = document.querySelector('#modal-close');
+
+        cancelButton.addEventListener('click', (e) => {
+          e.preventDefault();
+          itemDiv.innerHTML = '';
+          modalContain.classList.remove('new-modal-show');
+          backOverlay.classList.remove('modal-backdrop-show');
+        });
+        // modalDesk1.classList.add("modal-backdrop-show");
+        // deskShow1.classList.add("modal-show");
+      }
+    });
+  });
+});
+
+// const name = document.getElementById("name");
+// const email = document.getElementById("email");
+// const textarea = document.getElementById("text");
+// const form = document.getElementById("form");
+// const errorElement = document.getElementById("error");
+
+// form.addEventListener("submit", (e) => {
+//     e.preventDefault();
+//     console.log("Submitted");
+//     let messages = [];
+//     lowerCaseEmail = email.value.toLocaleLowerCase();
+//     if (name.value.length <= 6) {
+//         messages.push("email must be lowercase");
+//         console.log("email must be lowercase");
+//     }
+//     if (email !== lowerCaseEmail) {
+//         messages.push("email must be lowercase");
+//         console.log("email must be lowercase");
+//     }
+//     if (messages.length > 0) {
+//         e.preventDefault();
+//         errorElement.innerText = messages.join(",");
+//     }
+// });
