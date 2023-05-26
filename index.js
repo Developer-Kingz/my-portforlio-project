@@ -286,18 +286,16 @@ data.forEach((item) => {
 });
 
 const email = document.getElementById('email');
-const form = document.querySelector('form');
+const form = document.getElementById('form');
 const errorElement = document.getElementById('error');
 
 form.addEventListener('submit', (e) => {
-  e.preventDefault();
   const messages = [];
-  const lowerCaseEmail = email.value.toLocaleLowerCase();
-  if (email.value !== lowerCaseEmail) {
-    messages.push('email must be lowercase');
+  if (email.value !== email.value.toLowerCase()) {
+    messages.push('Email must be lowercase.');
+    e.preventDefault();
   }
   if (messages.length > 0) {
-    e.preventDefault();
     errorElement.innerText = messages.join(',');
   }
 });

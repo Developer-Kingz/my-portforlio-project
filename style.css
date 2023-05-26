@@ -372,6 +372,10 @@ border: 1px solid black; */
   border-radius: 16px;
 }
 
+#error {
+  color: red;
+}
+
 .card-img {
   width: 295px;
   height: 220px;
