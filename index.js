@@ -286,11 +286,21 @@ data.forEach((item) => {
 });
 
 const email = document.getElementById('email');
+const name = document.getElementById('name');
+const textArea = document.getElementById('text');
 const form = document.getElementById('form');
 const errorElement = document.getElementById('error');
 
 form.addEventListener('submit', (e) => {
   const messages = [];
+  const storeEmail = email.value;
+  const storeName = name.value;
+  const storeText = textArea.value;
+
+  localStorage.setItem('full_name', storeName);
+  localStorage.setItem('email', storeEmail);
+  localStorage.setItem('message', storeText);
+
   if (email.value !== email.value.toLowerCase()) {
     messages.push('Email must be lowercase.');
     e.preventDefault();
