@@ -25,6 +25,7 @@ const data = [
             'Experimental content creation feature that allows users to add to an existing stay over the course of a day without spamming their friends Experimental content creation feature that allows users to add to an existing stay over the course of a day without spamming their friends Experimental content creation feature that allows users to add to an existing stay over the course of a day without spamming their friends',
     mobileImg: 'Snapshoot Portfolio.svg',
     desktopImg: 'desktop4.svg',
+    desktoppopImg: 'newphoto.svg',
     circle: 'Counter.svg',
     live: 'See Live',
     source: 'See Source',
@@ -47,6 +48,7 @@ const data = [
             'Experimental content creation feature that allows users to add to an existing stay over the course of a day without spamming their friends Experimental content creation feature that allows users to add to an existing stay over the course of a day without spamming their friends Experimental content creation feature that allows users to add to an existing stay over the course of a day without spamming their friends',
     mobileImg: 'Snapshoot Portfolio (4).svg',
     desktopImg: 'desktop3.svg',
+    desktoppopImg: 'newphoto.svg',
     circle: 'Counter.svg',
     live: 'See Live',
     source: 'See Source',
@@ -69,6 +71,7 @@ const data = [
             'Experimental content creation feature that allows users to add to an existing stay over the course of a day without spamming their friends Experimental content creation feature that allows users to add to an existing stay over the course of a day without spamming their friends Experimental content creation feature that allows users to add to an existing stay over the course of a day without spamming their friends',
     mobileImg: 'Snapshoot Portfolio (3).svg',
     desktopImg: 'desktopimg.svg',
+    desktoppopImg: 'newphoto.svg',
     circle: 'Counter.svg',
     live: 'See Live',
     source: 'See Source',
@@ -90,6 +93,7 @@ const data = [
             'Experimental content creation feature that allows users to add to an existing stay over the course of a day without spamming their friends Experimental content creation feature that allows users to add to an existing stay over the course of a day without spamming their friends Experimental content creation feature that allows users to add to an existing stay over the course of a day without spamming their friends',
     mobileImg: 'Snapshoot Portfolio (3).svg',
     desktopImg: 'desktop2.svg',
+    desktoppopImg: 'newphoto.svg',
     circle: 'Counter.svg',
     live: 'See Live',
     source: 'See Source',
@@ -181,14 +185,13 @@ data.forEach((item) => {
 
         modalContainer.appendChild(itemMobileDiv);
         modalContainer.classList.add('modal-inner-show');
-        // const cancelButton = document.querySelector("#modal-close");
+        const cancelButton = document.querySelector('#modal-close');
 
-        // cancelButton.addEventListener("click", (e) => {
-        //     e.preventDefault();
-        //     itemMobileDiv.innerHTML = "";
-        //     modalContain.classList.remove("new-modal-show");
-        //     backOverlay.classList.remove("modal-backdrop-show");
-        // });
+        cancelButton.addEventListener('click', (e) => {
+          e.preventDefault();
+          itemMobileDiv.innerHTML = '';
+          backOverlay.classList.remove('modal-backdrop-show');
+        });
       }
     });
   });
@@ -239,7 +242,8 @@ data.forEach((item) => {
             <img src="${item.circle}" alt="" />
             <p>2015</p>
           </div>
-          <img src="${item.desktopImg}" class="pop-desk-img" alt="Mobile Image">
+          <img src="${item.desktoppopImg}" class="pop-desk-img" alt="Mobile Image">
+          
           <div class="description-cont">
           <div class="description-p">
             <p class="writeup-div">${item.deskDescription}</p>
@@ -273,34 +277,7 @@ data.forEach((item) => {
           modalContain.classList.remove('new-modal-show');
           backOverlay.classList.remove('modal-backdrop-show');
         });
-        // modalDesk1.classList.add("modal-backdrop-show");
-        // deskShow1.classList.add("modal-show");
       }
     });
   });
 });
-
-// const name = document.getElementById("name");
-// const email = document.getElementById("email");
-// const textarea = document.getElementById("text");
-// const form = document.getElementById("form");
-// const errorElement = document.getElementById("error");
-
-// form.addEventListener("submit", (e) => {
-//     e.preventDefault();
-//     console.log("Submitted");
-//     let messages = [];
-//     lowerCaseEmail = email.value.toLocaleLowerCase();
-//     if (name.value.length <= 6) {
-//         messages.push("email must be lowercase");
-//         console.log("email must be lowercase");
-//     }
-//     if (email !== lowerCaseEmail) {
-//         messages.push("email must be lowercase");
-//         console.log("email must be lowercase");
-//     }
-//     if (messages.length > 0) {
-//         e.preventDefault();
-//         errorElement.innerText = messages.join(",");
-//     }
-// });
