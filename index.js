@@ -250,8 +250,8 @@ data.forEach((item) => {
              <button class="desktop-btn">${item.skills.skill3}</button>
              <hr>
              <div class="description-see">
-               <button class="see-project">See Live</button>
-               <button class="see-project">See Source</button>
+               <button type="submit" class="see-project">See Live</button>
+               <button type="submit" class="see-project">See Source</button>
              </div>
             </div>
           </div>
