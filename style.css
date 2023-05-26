@@ -259,14 +259,15 @@ h3 {
 
 .item p {
   margin-bottom: 2vh;
+  margin-top: 1vh;
 }
 
 .item button {
   color: #6070ff;
   background-color: #ebebff;
   border: none;
-  padding: 0.5vh 2vw;
-  border-radius: 5px;
+  padding: 0.5vh 3vw;
+  border-radius: 8px;
 }
 
 .modal-inner2 {
