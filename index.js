@@ -1,115 +1,115 @@
-const popup = document.getElementById("mobile-toggle");
-const menubutton = document.getElementById("menu-hide");
+const popup = document.getElementById('mobile-toggle');
+const menubutton = document.getElementById('menu-hide');
 
 function openMenu() {
-    popup.classList.add("mobile-toggle-show");
-    menubutton.classList.add("menu-hide");
+  popup.classList.add('mobile-toggle-show');
+  menubutton.classList.add('menu-hide');
 }
 openMenu();
 function closeMenu() {
-    popup.classList.remove("mobile-toggle-show");
-    menubutton.classList.remove("menu-hide");
+  popup.classList.remove('mobile-toggle-show');
+  menubutton.classList.remove('menu-hide');
 }
 closeMenu();
 
 const data = [
-    {
-        id: 1,
-        name: "Tonic",
-        title: "Canopy",
-        stack: "Back End Dev",
-        year: "2015",
-        description:
-            "Experimental content creation feature that allows users to add to an existing stay over the course of a day without spamming their friends",
-        deskDescription:
-            "Experimental content creation feature that allows users to add to an existing stay over the course of a day without spamming their friends Experimental content creation feature that allows users to add to an existing stay over the course of a day without spamming their friends Experimental content creation feature that allows users to add to an existing stay over the course of a day without spamming their friends",
-        mobileImg: "Snapshoot Portfolio.svg",
-        desktopImg: "desktop4.svg",
-        desktoppopImg: "newphoto.svg",
-        circle: "Counter.svg",
-        live: "See Live",
-        source: "See Source",
-        skills: {
-            skill1: "html",
-            skill2: "css",
-            skill3: "javaScript",
-        },
+  {
+    id: 1,
+    name: 'Tonic',
+    title: 'Canopy',
+    stack: 'Back End Dev',
+    year: '2015',
+    description:
+            'Experimental content creation feature that allows users to add to an existing stay over the course of a day without spamming their friends',
+    deskDescription:
+            'Experimental content creation feature that allows users to add to an existing stay over the course of a day without spamming their friends Experimental content creation feature that allows users to add to an existing stay over the course of a day without spamming their friends Experimental content creation feature that allows users to add to an existing stay over the course of a day without spamming their friends',
+    mobileImg: 'Snapshoot Portfolio.svg',
+    desktopImg: 'desktop4.svg',
+    desktoppopImg: 'newphoto.svg',
+    circle: 'Counter.svg',
+    live: 'See Live',
+    source: 'See Source',
+    skills: {
+      skill1: 'html',
+      skill2: 'css',
+      skill3: 'javaScript',
     },
+  },
 
-    {
-        id: 2,
-        name: "Multi-Post Stories",
-        title: "Canopy",
-        stack: "Back End Dev",
-        year: "2015",
-        description:
-            "A daily selection of privately personalized reads; no accounts or sign-ups required.",
-        deskDescription:
-            "Experimental content creation feature that allows users to add to an existing stay over the course of a day without spamming their friends Experimental content creation feature that allows users to add to an existing stay over the course of a day without spamming their friends Experimental content creation feature that allows users to add to an existing stay over the course of a day without spamming their friends",
-        mobileImg: "Snapshoot Portfolio (4).svg",
-        desktopImg: "desktop3.svg",
-        desktoppopImg: "newphoto.svg",
-        circle: "Counter.svg",
-        live: "See Live",
-        source: "See Source",
-        skills: {
-            skill1: "html",
-            skill2: "css",
-            skill3: "javaScript",
-        },
+  {
+    id: 2,
+    name: 'Multi-Post Stories',
+    title: 'Canopy',
+    stack: 'Back End Dev',
+    year: '2015',
+    description:
+            'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    deskDescription:
+            'Experimental content creation feature that allows users to add to an existing stay over the course of a day without spamming their friends Experimental content creation feature that allows users to add to an existing stay over the course of a day without spamming their friends Experimental content creation feature that allows users to add to an existing stay over the course of a day without spamming their friends',
+    mobileImg: 'Snapshoot Portfolio (4).svg',
+    desktopImg: 'desktop3.svg',
+    desktoppopImg: 'newphoto.svg',
+    circle: 'Counter.svg',
+    live: 'See Live',
+    source: 'See Source',
+    skills: {
+      skill1: 'html',
+      skill2: 'css',
+      skill3: 'javaScript',
     },
+  },
 
-    {
-        id: 3,
-        name: "multi-Post Stories",
-        title: "Canopy",
-        stack: "Back End Dev",
-        year: "2015",
-        description:
-            "A daily selection of privately personalized reads; no accounts or sign-ups required.",
-        deskDescription:
-            "Experimental content creation feature that allows users to add to an existing stay over the course of a day without spamming their friends Experimental content creation feature that allows users to add to an existing stay over the course of a day without spamming their friends Experimental content creation feature that allows users to add to an existing stay over the course of a day without spamming their friends",
-        mobileImg: "Snapshoot Portfolio (3).svg",
-        desktopImg: "desktopimg.svg",
-        desktoppopImg: "newphoto.svg",
-        circle: "Counter.svg",
-        live: "See Live",
-        source: "See Source",
-        skills: {
-            skill1: "html",
-            skill2: "css",
-            skill3: "javaScript",
-        },
+  {
+    id: 3,
+    name: 'multi-Post Stories',
+    title: 'Canopy',
+    stack: 'Back End Dev',
+    year: '2015',
+    description:
+            'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    deskDescription:
+            'Experimental content creation feature that allows users to add to an existing stay over the course of a day without spamming their friends Experimental content creation feature that allows users to add to an existing stay over the course of a day without spamming their friends Experimental content creation feature that allows users to add to an existing stay over the course of a day without spamming their friends',
+    mobileImg: 'Snapshoot Portfolio (3).svg',
+    desktopImg: 'desktopimg.svg',
+    desktoppopImg: 'newphoto.svg',
+    circle: 'Counter.svg',
+    live: 'See Live',
+    source: 'See Source',
+    skills: {
+      skill1: 'html',
+      skill2: 'css',
+      skill3: 'javaScript',
     },
-    {
-        id: 4,
-        name: "multi-Post Stories",
-        title: "Canopy",
-        stack: "Back End Dev",
-        year: "2015",
-        description:
-            "A daily selection of privately personalized reads; no accounts or sign-ups required.",
-        deskDescription:
-            "Experimental content creation feature that allows users to add to an existing stay over the course of a day without spamming their friends Experimental content creation feature that allows users to add to an existing stay over the course of a day without spamming their friends Experimental content creation feature that allows users to add to an existing stay over the course of a day without spamming their friends",
-        mobileImg: "Snapshoot Portfolio (3).svg",
-        desktopImg: "desktop2.svg",
-        desktoppopImg: "newphoto.svg",
-        circle: "Counter.svg",
-        live: "See Live",
-        source: "See Source",
-        skills: {
-            skill1: "html",
-            skill2: "css",
-            skill3: "javaScript",
-        },
+  },
+  {
+    id: 4,
+    name: 'multi-Post Stories',
+    title: 'Canopy',
+    stack: 'Back End Dev',
+    year: '2015',
+    description:
+            'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    deskDescription:
+            'Experimental content creation feature that allows users to add to an existing stay over the course of a day without spamming their friends Experimental content creation feature that allows users to add to an existing stay over the course of a day without spamming their friends Experimental content creation feature that allows users to add to an existing stay over the course of a day without spamming their friends',
+    mobileImg: 'Snapshoot Portfolio (3).svg',
+    desktopImg: 'desktop2.svg',
+    desktoppopImg: 'newphoto.svg',
+    circle: 'Counter.svg',
+    live: 'See Live',
+    source: 'See Source',
+    skills: {
+      skill1: 'html',
+      skill2: 'css',
+      skill3: 'javaScript',
     },
+  },
 ];
 
 data.forEach((item) => {
-    const section = document.createElement("div");
-    const forMobile = document.createElement("div");
+  const section = document.createElement('div');
+  const forMobile = document.createElement('div');
 
-    forMobile.innerHTML = `
+  forMobile.innerHTML = `
     <div class="second-section">
     
     <div class="card1">
@@ -132,27 +132,27 @@ data.forEach((item) => {
                                 <li>${item.skills.skill2}</li>
                                 <li>${item.skills.skill3}</li>
                               </ul>
-                              <button class="see-mobile">See Project</button>
+                              <button id="${item.id}" class="see-mobile">See Project</button>
                         </div>
                     </div>
 
                 </div>
   </div>
     `;
-    const mobileSectionCont = document.querySelector(".main-container");
-    mobileSectionCont.appendChild(forMobile);
-    const mobilePop = document.querySelectorAll(".see-mobile");
+  const mobileSectionCont = document.querySelector('.main-container');
+  mobileSectionCont.appendChild(forMobile);
+  const mobilePop = document.querySelectorAll('.see-mobile');
 
-    mobilePop.forEach((pop) => {
-        pop.addEventListener("click", (e) => {
-            let { id } = e.target;
-            id = Number(id);
-            if (id === item.id) {
-                const itemMobileDiv = document.createElement("div");
-                itemMobileDiv.className = "new-items";
-                itemMobileDiv.innerHTML = `
+  mobilePop.forEach((pop) => {
+    pop.addEventListener('click', (e) => {
+      let { id } = e.target;
+      id = Number(id);
+      if (id === item.id) {
+        const itemMobileDiv = document.createElement('div');
+        itemMobileDiv.className = 'new-items';
+        itemMobileDiv.innerHTML = `
           <h1>${item.name}</h1>
-          <div class="canopy-div-pop">
+          <div class="canopy-div-mob">
             <p>${item.title}</p>
             <img src="${item.circle}" alt="" />
             <p>${item.stack}</p>
@@ -165,39 +165,42 @@ data.forEach((item) => {
             <p class="writeup-div">${item.description}</p>
           </div>
             <div class="description-btn-cont">
-             <button class="desktop-btn">${item.skills.skill1}</button>
-             <button class="desktop-btn">${item.skills.skill2}</button>
-             <button class="desktop-btn">${item.skills.skill3}</button>
-             <hr>
+             <button class="mob-btn">${item.skills.skill1}</button>
+             <button class="mob-btn">${item.skills.skill2}</button>
+             <button class="mob-btn">${item.skills.skill3}</button>
+             <hr class="mob-line">
              <div class="description-see">
-               <button class="see-project">See Live</button>
-               <button class="see-project">See Source</button>
+               <button class="see-project-mob">See Live</button>
+               <button class="see-project-mob">See Source</button>
              </div>
             </div>
           </div>
 
             `;
 
-                const backOverlay = document.querySelector(".mobile-backdrop1");
-                backOverlay.classList.add("modal-backdrop-show");
+        const backOverlay = document.querySelector('.mobile-backdrop1');
+        backOverlay.classList.add('modal-backdrop-show');
 
-                const modalContainer = document.querySelector(".modal-inner");
+        const modalContainer = document.querySelector('.modal-inner');
 
-                modalContainer.appendChild(itemMobileDiv);
-                modalContainer.classList.add("modal-inner-show");
-                const cancelButton = document.querySelector("#modal-close");
+        modalContainer.appendChild(itemMobileDiv);
+        modalContainer.classList.add('modal-inner-show');
+        const cancelButton = document.querySelector(
+          '#modal-close-mobile',
+        );
 
-                cancelButton.addEventListener("click", (e) => {
-                    e.preventDefault();
-                    itemMobileDiv.innerHTML = "";
-                    backOverlay.classList.remove("modal-backdrop-show");
-                });
-            }
+        cancelButton.addEventListener('click', (e) => {
+          e.preventDefault();
+          itemMobileDiv.innerHTML = '';
+          modalContainer.classList.remove('modal-inner-show');
+          backOverlay.classList.remove('modal-backdrop-show');
         });
+      }
     });
+  });
 
-    // DESKTOP
-    section.innerHTML = `
+  // DESKTOP
+  section.innerHTML = `
          <div class="mobile-version">
          <div class="mobile-image">
           <img src="${item.desktopImg}" alt="" class="card-img-img">
@@ -221,19 +224,19 @@ data.forEach((item) => {
        </div>
         `;
 
-    const sectionContainer = document.querySelector(".desktop-container");
-    sectionContainer.appendChild(section);
+  const sectionContainer = document.querySelector('.desktop-container');
+  sectionContainer.appendChild(section);
 
-    const popUps = document.querySelectorAll(".see-project");
+  const popUps = document.querySelectorAll('.see-project');
 
-    popUps.forEach((pop) => {
-        pop.addEventListener("click", (e) => {
-            let { id } = e.target;
-            id = Number(id);
-            if (id === item.id) {
-                const itemDiv = document.createElement("div");
-                itemDiv.className = "new-items";
-                itemDiv.innerHTML = `
+  popUps.forEach((pop) => {
+    pop.addEventListener('click', (e) => {
+      let { id } = e.target;
+      id = Number(id);
+      if (id === item.id) {
+        const itemDiv = document.createElement('div');
+        itemDiv.className = 'new-items';
+        itemDiv.innerHTML = `
           <h1>${item.name}</h1>
           <div class="canopy-div-pop">
             <p>${item.title}</p>
@@ -262,44 +265,39 @@ data.forEach((item) => {
 
             `;
 
-                const backOverlay = document.querySelector(".desk-backdrop1");
-                backOverlay.classList.add("modal-backdrop-show");
+        const backOverlay = document.querySelector('.desk-backdrop1');
+        backOverlay.classList.add('modal-backdrop-show');
 
-                const modalContain =
-                    document.querySelector(".modal-inner-desk1");
+        const modalContain = document.querySelector('.modal-inner-desk1');
 
-                modalContain.appendChild(itemDiv);
-                modalContain.classList.add("new-modal-show");
-                const cancelButton = document.querySelector("#modal-close");
+        modalContain.appendChild(itemDiv);
+        modalContain.classList.add('new-modal-show');
+        const cancelButton = document.querySelector('#modal-close');
 
-                cancelButton.addEventListener("click", (e) => {
-                    e.preventDefault();
-                    itemDiv.innerHTML = "";
-                    modalContain.classList.remove("new-modal-show");
-                    backOverlay.classList.remove("modal-backdrop-show");
-                });
-            }
+        cancelButton.addEventListener('click', (e) => {
+          e.preventDefault();
+          itemDiv.innerHTML = '';
+          modalContain.classList.remove('new-modal-show');
+          backOverlay.classList.remove('modal-backdrop-show');
         });
+      }
     });
+  });
 });
 
-const name = document.getElementById("name");
-const email = document.getElementById("email");
-const textarea = document.getElementById("text");
-const form = document.querySelector("form");
-const errorElement = document.getElementById("error");
+const email = document.getElementById('email');
+const form = document.querySelector('form');
+const errorElement = document.getElementById('error');
 
-form.addEventListener("submit", (e) => {
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  const messages = [];
+  const lowerCaseEmail = email.value.toLocaleLowerCase();
+  if (email.value !== lowerCaseEmail) {
+    messages.push('email must be lowercase');
+  }
+  if (messages.length > 0) {
     e.preventDefault();
-    console.log("Submitted");
-    let messages = [];
-    lowerCaseEmail = email.value.toLocaleLowerCase();
-    if (email.value !== lowerCaseEmail) {
-        messages.push("email must be lowercase");
-        console.log("email must be lowercase");
-    }
-    if (messages.length > 0) {
-        e.preventDefault();
-        errorElement.innerText = messages.join(",");
-    }
+    errorElement.innerText = messages.join(',');
+  }
 });
